@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Times para o Interclasse -  Pedro Lima, Cauê </title>
+
+         <script src="script1.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .time-container {
+            margin-top: 20px;
+        }
+
+        .time {
+            margin-bottom: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .time strong {
+            font-size: 18px;
+        }
+
+        .alerta {
+            color: red;
+            font-weight: bold;
+        }
+
+        .btn-cadastro {
+            margin-top: 20px;
+            display: block;
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .btn-cadastro:hover {
+            background-color: #45a049;
+        }
+
+        .time-info {
+            margin-top: 10px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Cadastro de Times para o Interclasse</h1>
+
+<div id="alerta" class="alerta" style="display: none;"></div>
+
+<div id="timesCadastrados" class="time-container">
+
+</div>
+
+<button id="btnCadastrar" class="btn-cadastro" onclick="cadastrarTime()">Cadastrar Time</button
